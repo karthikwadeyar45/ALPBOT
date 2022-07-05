@@ -1,0 +1,653 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there", "Hello", "Good day", "Whats up"],
+         "responses": ["Hello!", "Good to see you again!", "Hi there, how can I help"],
+         "context_set": ""
+        },
+
+        {"tag": "goodbye",
+         "patterns": ["cya", "See you later", "Goodbye", "I am Leaving", "Have a Good day"],
+         "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!"],
+         "context_set": ""
+        },
+
+        {
+                "tag": "name",
+                "patterns": [
+                        "name",
+                        "your name",
+                        "do you have a name",
+                        "what are you called",
+                        "what is your name",
+                        "what should I call you",
+                        "whats your name?",
+                        "what are you",
+                        "who are you",
+                        "who is this",
+                        "what am i chatting to",
+                        "who am i taking to",
+                        "what are you"
+                ],
+                "responses": [
+                        "You can call me ALP-BOT.",
+                        "I'm ALP-BOT",
+                        "I'm ALP-BOT aka DSCE's Chatbot."
+                ],
+                "context_set": ""
+        },
+        {"tag": "thanks",
+                "patterns": ["Thanks","Thank you", "That's helpful","Awesome thanks","Thanks for helping me"],
+                "responses": ["Happy to help!","Any time!","My pleasure"],
+                "context_set": ""
+        },
+
+        {"tag": "third_semester_courses",
+         "patterns": ["What are the courses offered in 3rd sem","Courses offered in 3rd sem","Subjects in 3rd semester",
+                     "What are subjects in 3rd semester","Number of courses in 3rd semester","Total courses offered in 3rd semester","3rd sem courses","What are the courses offered in third sem","Courses offered in third sem","Subjects in third semester","What are subjects in third semester","Number of courses in third semester","Total courses offered in third semester","third sem courses"],
+         "responses": ["DATA STRUCTURES AND APPLICATIONS OBJECT ORIENTED PROGRAMMING WITH JAVA INTERNET AND WEB PROGRAMMING COMPUTER ORGANISATION LOGIC DESIGN DATA STRUCTURE LABORATORY WITH APPLICATIONS JAVA PROGRAMMING LABORATORY WITH MINI PROJECT"],
+         "context_set":""
+         },
+
+        {"tag": "fourth_semester_courses",
+         "patterns": ["What are the courses offered in 4th sem","Courses offered in 4th sem","Subjects in 4th semester",
+                     "What are subjects in 4th semester","Number of courses in 4th semester","Total courses offered in 4th semester","4th sem courses","What are the courses offered in fourth sem","Courses offered in fourth sem","Subjects in fourth semester","What are subjects in fourth semester","Number of courses in fourth semester","Total courses offered in fourth semester","fourth sem courses"],
+         "responses": ["DESIGN AND ANALYSIS OF ALGORITHMS MICROPROCESSORS AND MICROCONTROLLERS OPERATING SYSTEM DATABASE MANAGEMENT SYSTEM DESIGN AND ANALYSIS OF ALGOTRITHM LABORATORY DBMS LABORATORY WITH MINI PROJECT"],
+         "context_set":""
+        },
+
+        {"tag": "fifth_semester_courses",
+         "patterns": ["What are the courses offered in 5th sem","Courses offered in 5th sem","Subjects in 5th semester",
+                     "What are subjects in 5th semester","Number of courses in 5th semester","Total courses offered in 5th semester","5th sem courses","What are the courses offered in fifth sem","Courses offered in fifth sem","Subjects in fifth semester","What are subjects in fifth semester","Number of courses in fifth semester","Total courses offered in fifth semester","fifth sem courses"],
+         "responses": ["COMPUTER NETWORKS ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING SOFTWARE ENGINEERING CRYPTOGRAPHY MOBILE APPLICATION DEVELOPMENT OBJECT ORIENTED MODELLING AND DESIGN EMERGING TECHNOLOGIES COMPUTER NETWORK LABORATORY WITH MINI PROJECT ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING LABORATORY WITH APPLICATION"],
+         "context_set":""
+        },
+
+        {"tag": "sixth_semester_courses",
+         "patterns": ["What are the courses offered in 6th sem","Courses offered in 6th sem","Subjects in 6th semester",
+                     "What are subjects in 6th semester","Number of courses in 6th semester","Total courses offered in 6th semester","6th sem courses","What are the courses offered in sixth sem","Courses offered in sixth sem","Subjects in sixth semester","What are subjects in sixth semester","Number of courses in sixth semester","Total courses offered in sixth semester","sixth sem courses"],
+         "responses": ["ENGINEERING ECONOMICS SYSTEM SOFTWARE CYBER SECURITY CLOUD COMPUTING APPLICATIONS INTERNET OF THINGS SYSTEM SOFTWARE AND OPERATING SYSTEM LAB WITH MINI PROJECT CYBER SECURITY LAB WITH APPLICATIONS MINI PROJECT"],
+         "context_set":""
+        },
+
+        {"tag": "seventh_semester_courses",
+         "patterns": ["What are the courses offered in 7th sem","Courses offered in 7th sem","Subjects in 7th semester",
+                     "What are subjects in 7th semester","Number of courses in 7th semester","Total courses offered in 7th semester","7th sem courses","What are the courses offered in seventh sem","Courses offered in seventh sem","Subjects in seventh semester","What are subjects in seventh semester","Number of courses in seventh semester","Total courses offered in seventh semester","seventh sem courses"],
+         "responses": ["BIG DATA ANALYTICS WIRELESS SENSOR NETWORK BLOCK CHAIN TECHNOLOGIES PROJECT WORK CLOUD AND BIG DATA LABORATORY WITH MINOR PROJECT"],
+         "context_set":""
+        },
+
+        {"tag": "eighth_semester_courses",
+         "patterns": ["What are the courses offered in 8th sem","Courses offered in 8th sem","Subjects in 8th semester",
+                     "What are subjects in 8th semester","Number of courses in 8th semester","Total courses offered in 8th semester","8th sem courses","What are the courses offered in eighth sem","Courses offered in eighth sem","Subjects in eighth semester","What are subjects in eighth semester","Number of courses in eighth semester","Total courses offered in eighth semester","eighth sem courses"],
+         "responses": ["MAJOR PROJECT TECHNICAL SEMINAR INTERNSHIP"],
+         "context_set":""
+        },
+        { "tag":"Data_Structures_and_Applications",
+        "patterns":["who teaches Data Structures and Applications?","Which teacher teaches Data Structures and Applications?","Data Structures and Applicationsteacher?","Faculty for Data Structures and Applications?",
+                   "Name of the faculty who teaches Data Structures and Applications?","faculty name for Data Structures and Applications?"],
+        "responses":["Mrs Sahana Damale and Mr Prasad A M"],
+               "context_set":""
+        },
+            
+        { "tag":"Object_Oriented_Programming_with_Java",
+                "patterns":["who teaches Object oriented programming with java?","Which teacher teaches Object oriented programming with java?","Object oriented programming with javateacher?","Faculty for Object oriented programming with java?",
+                 "Name of the faculty who teaches Object oriented programming with java?","faculty name for Object oriented programming with java?"],
+                "responses":["Ms Asnika S and Mrs Shravya A R "],
+               "context_set":""
+        },
+            
+        { "tag":"Internet_and_Web_Programming",
+                "patterns":["who teaches Internet and Web Programming?","Which teacher teaches Internet and Web Programming?","Internet and Web Programming teacher?","Faculty for Internet and Web Programming?",
+                            "Name of the faculty who teaches Internet and Web Programming?","faculty name for Internet and Web Programming?"],
+                "responses":["Mrs Anitha M and Dr Deepak G "],
+               "context_set":""
+        },
+            
+        { "tag":"Computer_Organisation",
+                "patterns":["who teaches Computer Organisation?","Which teacher teaches Computer Organisation?","Computer Organisation  teacher?","Faculty for Computer Organisation?",
+                            "Name of the faculty who teaches Computer Organisation?","faculty name for Computer Organisation?"],
+                "responses":["Mrs Annapoorna and Dr Shubha bhat"],
+               "context_set":""
+        },
+            
+            
+        { "tag":"Logic_Design",
+                "patterns":["who teaches Logic Design?","Which teacher teaches Logic Design?","Logic Design  teacher?","Faculty for Logic Design?",
+                            "Name of the faculty who teaches Logic Design?","faculty name for Logic Design?"],
+                "responses":["Dr Nagaraj and Mr Ravichandra H"],
+               "context_set":""
+        },
+
+        { "tag":"Design_and_Analysis_of_Algorithm",
+                "patterns":["who teaches Design and Analysis of Algorithm?","Which teacher teaches Design and Analysis of Algorithm?","Design and Analysis of Algorithm  teacher?","Faculty for Design and Analysis of Algorithm?",
+                            "Name of the faculty who teaches Design and Analysis of Algorithm?","faculty name for Design and Analysis of Algorithm?"],
+                "responses":["Mr Prasad A M and Mr Harish Kumar N"],
+               "context_set":""
+        },
+            
+            
+        { "tag":"Microprocessors_and_Microcontrollers",
+                "patterns":["who teaches Microprocessors and Microcontrollers?","Which teacher teaches Microprocessors and Microcontrollers?","Microprocessors and Microcontrollersteacher?","Faculty for Microprocessors and Microcontrollers?",
+                            "Name of the faculty who teaches Microprocessors and Microcontrollers?","faculty name for Microprocessors and Microcontrollers?"],
+                "responses":["Dr Nagaraj and Mrs Bhavana B R"],
+               "context_set":""
+        },
+            
+            
+            
+        { "tag":"Operating_System",
+                "patterns":["who teaches Operating System?","Which teacher teaches Operating System?","Operating System teacher?","Faculty for Operating System?",
+                            "Name of the faculty who teaches Operating System?","faculty name for Operating System?"],
+                "responses":["Mrs Sahana Damale "],
+               "context_set":""
+        },
+            
+        { "tag":"Database_Management_System",
+                "patterns":["who teaches Database Management System?","Which teacher teaches Database Management System?","Database Management System teacher?","Faculty for Database Management System?",
+                            "Name of the faculty who teaches Database Management System?","faculty name for Database Management System?"],
+                "responses":["Mrs Anupama Girish and Dr. Mohd Tajuddin"],
+               "context_set":""
+        },
+            
+            
+            
+        { "tag":"Automata_Theory_and_Formal_Languages",
+                "patterns":["who teaches Automata Theory and Formal Languages?","Which teacher teaches Automata Theory and Formal Languages?","Automata Theory and Formal Languages  teacher?","Faculty for Automata Theory and Formal Languages?",
+                            "Name of the faculty who teaches Automata Theory and Formal Languages?","faculty name for Automata Theory and Formal Languages?"],
+                "responses":["Mrs Sarala D V and Mr Ravichandra H"],
+               "context_set":""
+        },
+
+        { "tag": "Blockchain_Technology",
+                "patterns": ["who teaches Blockchain technology?","Which teacher teaches Blockchain technologies?","Blockchain technology teacher?","Faculty for Blockchain technology?",
+                            "Name of the faculty who teaches Blockchain technology?","faculty name for Blockchain technology?"],
+                "responses": ["Mrs Dhara K N and Dr Ramya R S"],
+               "context_set":""
+        },
+
+        { "tag":"Cloud_Computing_Applications",
+                "patterns":["who teaches Cloud Computing?","Which teacher teaches Cloud Computing?","Cloud Computing teacher?","Faculty for Cloud Computing?",
+                            "Name of the faculty who teaches Cloud Computing?","faculty name for Cloud Computing?"],
+                "responses":["Dr Amutha S and Dr Krishnan R"],
+               "context_set":""
+        },
+
+        { "tag":"Cyber_Security",
+                "patterns":["who teaches Cyber Security?","Which teacher teaches Cyber Security?"," Cyber Security teacher?","Faculty for Cyber Security?",
+                            "Name of the faculty who teaches Cyber Security?","faculty name for Cyber Security?"],
+                "responses":["Dr Ramya R S and Prof S Keerti "],
+               "context_set":""
+        },
+
+        { "tag":"Big_Data_Analtytics",
+                "patterns":["who teaches Big Data Analytics?","Which teacher teaches Big Data Analytics?","Big Data Analytics teacher?","Faculty for Big Data Analytics?",
+                            "Name of the faculty who teaches Big Data Analytics?","faculty name for Big Data Analytics?"],
+                "responses":["Dr C Vinothini and Prof Ravichandran"],
+               "context_set":""
+        },
+
+        { "tag":"Artificial_Intelligence_Machine_Learning",
+                "patterns":["who teaches AIML?","Which teacher teaches AIML?","AIML teacher?","Faculty for AIML?",
+                            "Name of the faculty who teaches AIML?","faculty name for AIML?","who teaches artificial intelligence and machine learning?","Which teacher teaches artificial intelligence and machine learning?","AIML teacher?","Faculty for artificial intelligence and machine learning?",
+                            "Name of the faculty who teaches artificial intelligence and machine learning?","faculty name forartificial intelligence and machine learning?"],
+                "responses":["Prof Anupama Girish"],
+               "context_set":""
+        },
+
+        { "tag":"Computer_Networks",
+                "patterns":["who teaches Computer Networks?","Which teacher teaches Computer Networks?","Computer Networks teacher?","Faculty for Computer Networks?",
+                            "Name of the faculty who teaches Computer Networks?","faculty name for Computer Networks?","who teaches CN?","Which teacher teaches CN?","CN teacher?","Faculty for CN?",
+                            "Name of the faculty who teaches CN?","faculty name for CN?"],
+                "responses":["Mrs Anitha M and Dr Nagraj J"],
+               "context_set":""
+        },
+
+        { "tag":"System_Software",
+                "patterns":["who teaches System Software?","Which teacher teaches System Software?","System Software teacher?","Faculty for System Software?",
+                            "Name of the faculty who teaches System Software?","faculty name for System Software?"],
+                "responses":["Mrs Prameetha and Ms Asnika S"],
+               "context_set":""
+        },
+        {"tag": "Dr. D R Ramesh Babu",
+                "patterns": ["Who is the Head of the Department?","what is the  name of  Head of the Department?","Who is HOD?","what is the name of cse department HOD?","What are the subjects HOD teach?","What are the courses HOD teach?",
+                            "cse Department HOD Details?","information about HOD?","Education qualification of hod?","who is DR D R Ramesh Babu?"],
+                "responses": ["Dr. D R Ramesh Babu Director, Dayananda Sagar Research Foundation DSRF Vice-Principal, Professor & Head of the Department"],
+                "context_set":""
+        },
+
+        { "tag":"Dr Mohammed Tajuddin",
+                "patterns":["what subjects does Mohammed Tajuddin Sir teach?","Mohammed Tajuddin?", "Information about Mohammed Tajuddin?", "Education Qualification of Mohammed Tajuddin?","Subjects Taught by Mohammed Tajuddin?"
+                            ,"Details about Mohammed Tajuddin?", "Info about Mohammed Tajuddin?","Experience of Mohammed Tajuddin?"],
+                "responses":["DR. Mohammed Tajuddin is  Professor. Education Qualifications-M.Tech,(P.hd). Experience-23 years Email-id- tajuddin-cs@dayanandasagar.edu . Subjects-Database Management System."],
+               "context_set":""
+              },
+              
+              { "tag":"Dr Amutha S",
+                "patterns":["what subjects does Amutha S Ma'am teach?","Amutha S?", "Information about Amutha S?", "Education Qualification of Amutha S?","Subjects Taught by Amutha S?"
+                            ,"Details about Amutha S?", "Info about Amutha S?","Experience of Amutha S?"],
+                "responses":["DR. Amutha S is  Professor. Education Qualifications-M.Tech,(P.hd),LIMISTE. Experience-24.5 years Email-id- amutha-cs@dayanandasagar.edu . Subjects-Management and Entrepreneurship."],
+               "context_set":""
+              },
+              
+              { "tag":"Mr Ravichandra H",
+                "patterns":["what subjects does Ravichandra H Sir teach?","Ravichandra H?", "Information about Ravichandra H?", "Education Qualification of Ravichandra H?","Subjects Taught by Ravichandra H?"
+                            ,"Details about Ravichandra H?", "Info about Ravichandra H?","Experience of Ravichandra H?"],
+                "responses":["Mr Ravichandra H is an Assistant Professor. Education Qualifications-M.Tech,(P.hd). Experience-13 years Email-id- ravichandra-cs@dayanandasagar.edu . Subjects-Logic_Design and Automata_Theory_and_Formal_Languages"],
+               "context_set":""
+              },
+              
+              { "tag":"S Keerthi",
+                "patterns":["what subjects does S Keerthi Ma'am teach?","S Keerthi?", "Information about S Keerthi?", "Education Qualification of S Keerthi?","Subjects Taught by S Keerthi?"
+                            ,"Details about S Keerthi?", "Info about S Keerthi?","Experience of S Keerthi?"],
+                "responses":[" S Keerthi is an Assistant  Professor. Education Qualifications-B.E,M.E,(P.hd),LIMISTE. Experience-3 years 4 months  Email-id- keerthisridhar77@gmail.com . Subjects-Cyber Security and Wireless Sensor Network."],
+               "context_set":""
+              },
+              
+              
+              { "tag":"Mrs Sahana Damale",
+                "patterns":["what subjects does  Sahana Damale Ma'am teach?"," Sahana Damale?", "Information about  Sahana Damale?", "Education Qualification of  Sahana Damale?","Subjects Taught by  Sahana Damale?"
+                            ,"Details about  Sahana Damale?", "Info about  Sahana Damale?","Experience of  Sahana Damale?"],
+                "responses":["Mrs Sahana Damale is an Assistant  Professor. Education Qualifications-M.Tech,(P.hd). Experience-5 years  Email-id- sahana-cs@dayanandasagar.edu . Subjects-Data Structures and Applications."],
+               "context_set":""
+              },
+              
+              
+              { "tag":"Mrs Asnika Sridhar",
+                "patterns":["what subjects does  Asnika Sridhar Ma'am teach?","Asnika Sridhar?", "Information about  Asnika Sridhar?", "Education Qualification of  Asnika Sridhar?","Subjects Taught by  Asnika Sridhar?"
+                            ,"Details about Asnika Sridhar?", "Info about  Asnika Sridhar?","Experience of  Asnika Sridhar?"],
+                "responses":["Mrs Asnika Sridhar is an Assistant  Professor. Education Qualifications-M.Tech,(P.hd). Experience-6 years  Email-id- asnika-cs@dayanandasagar.edu . Subjects-Object Oriented Programming with Java."],
+               "context_set":""
+              },
+              
+              
+              { "tag":"Mrs Annapoorna B R",
+                "patterns":["what subjects does Annapoorna B R Ma'am teach?","Annapoorna B R?", "Information about  Annapoorna B R?", "Education Qualification of  Annapoorna B R?","Subjects Taught by  Annapoorna B R?"
+                            ,"Details about Annapoorna B R?", "Info about  Annapoorna B R?","Experience of  Annapoorna B R?"],
+                "responses":["Mrs Annapoorna B R is an Assistant  Professor. Education Qualifications-M.Tech,(P.hd). Experience-5 years  Email-id- annapoorna-cs@dayanandasagar.edu . Subjects-.Computer Organisation"],
+               "context_set":""
+              },
+              
+              
+              { "tag":"Dr Krishnan R",
+                "patterns":["what subjects does Krishnan R Sir teach?","Krishnan R?", "Information about Krishnan R?", "Education Qualification of Krishnan R?","Subjects Taught by Krishnan R?"
+                            ,"Details about Krishnan R?", "Info about Krishnan R?","Experience of Krishnan R?"],
+                "responses":["Dr Krishnan R is  Professor. Education Qualifications-M.Tech(IIT),P.hd(USA). Experience-35 years Email-id- krishnan-cs@dayanandasagar.edu . Subjects-Cloud Computing Applications"],
+               "context_set":""
+              },
+              
+              
+              { "tag":"Harish Kumar N",
+                "patterns":["what subjects does Harish Kumar N Sir teach?","Harish Kumar N?", "Information about Harish Kumar N?", "Education Qualification of Harish Kumar N?","Subjects Taught by Harish Kumar N?"
+                            ,"Details about Harish Kumar N?", "Info about Harish Kumar N?","Experience of Harish Kumar N?"],
+                "responses":["Harish Kumar N is an Assistant Professor. Education Qualifications-M.Tech,P.hd. Experience-9 years Email-id- harish-cs@dayanandasagar.edu . Subjects-Design and Analysis of Algorithm"],
+               "context_set":""
+              },
+        {
+                "tag": "creator",
+                "patterns": [
+
+                        "what is the name of your developers",
+                        "what is the name of your creators",
+                        "what is the name of the developers",
+                        "what is the name of the creators",
+                        "who created you",
+                        "your developers",
+                        "your creators",
+                        "who are your developers",
+                        "developers",
+                        "you are made by",
+                        "you are made by whom",
+                        "who created you",
+                        "who create you",
+                        "creators",
+                        "who made you",
+                        "who designed you"
+                ],
+                "responses": [
+                        "Karthik Akash Harish and Amareshwar developed me in may 2022, for their major project",
+                        "I was developed by Karthik Akash Harish and Amareshwar",
+                        "4 students developed me in Dayananda Sagar College of Engineering, Karthik Akash Harish and Amareshwar"
+                ],
+                "context_set": ""
+        },
+        {
+                "tag": "hours",
+                "patterns": [
+                        "timing of college",
+                        "what is college timing",
+                        "working days",
+                        "when are you guys open",
+                        "what are your hours",
+                        "hours of operation",
+                        "when is the college open",
+                        "college timing",
+                        "what about college timing",
+                        "is college open on saturday",
+                        "tell something about college timing",
+                        "what is the college  hours",
+                        "when should i come to college",
+                        "when should i attend college",
+                        "what is my college time",
+                        "college timing",
+                        "timing college"
+                ],
+                "responses": [
+                        "College is open 9am-5pm Monday-Friday! and 9am-2pm on Saturday"
+                ],
+                "context_set": ""
+        },
+        {
+                "tag": "location",
+                "patterns": [
+                        "where is the college located",
+                        "college is located at",
+                        "where is college",
+                        "where is college located",
+                        "address of college",
+                        "how to reach college",
+                        "college location",
+                        "college address",
+                        "wheres the college",
+                        "how can I reach college",
+                        "whats is the college address",
+                        "what is the address of college",
+                        "address",
+                        "location"
+                ],
+                "responses": [
+                        "Shavige Malleshwara Hills, 1st Stage, Kumaraswamy Layout , Bengaluru , Karnataka , India <a target=\"_blank\" href=\"https://www.google.com/maps/place/Dayananda+Sagara+College+of+Engineering/\" > here < /a>"
+                ],
+                "context_set": ""
+        },
+
+        {
+                "tag": "hostel",
+                "patterns": [
+                        "hostel facility",
+                        "hostel servive",
+                        "hostel location",
+                        "hostel address",
+                        "hostel facilities",
+                        "hostel fees",
+                        "Does college provide hostel",
+                        "Is there any hostel",
+                        "Where is hostel",
+                        "do you have hostel",
+                        "do you guys have hostel",
+                        "hostel",
+                        "hostel capacity",
+                        "what is the hostel fee",
+                        "how to get in hostel",
+                        "what is the hostel address",
+                        "how far is hostel from college",
+                        "hostel college distance",
+                        "where is the hostel",
+                        "how big is the hostel",
+                        "distance between college and hostel",
+                        "distance between hostel and college"
+                ],
+                "responses": [
+                        "Dayananda Sagar College of Engineering  does  provide hostel facility for both Boys And Girls. It has NRI hostel as well for Boys."
+                ],
+                "context_set": ""
+        },
+        {
+                "tag": "event",
+                "patterns": [
+                        "events organised",
+                        "list of events",
+                        "list of events organised in department",
+                        "list of events conducted in department",
+                        "What events are conducted in department",
+                        "Are there any event held at department",
+                        "Events?",
+                        "functions",
+                        "what are the events",
+                        "tell me about events",
+                        "what about events"
+                ],
+                "responses": [
+                        "Hackathons, Sports Week, Rural Development Projects ,Depatment Fests ,Ethnic Day and various other event conducted in the Department. For more information you can visit Department Website <a target=\"_blank\" href=\"https://www.dsce.edu.in/computer-science-engineering/news-events-cse/\" > here < /a> "
+                ],
+                "context_set": ""
+        },
+        {
+                "tag": "library",
+                "patterns": [
+                        "is there any library",
+                        "library facility",
+                        "library facilities",
+                        "do you have library",
+                        "does the college have library facility",
+                        "college library",
+                        "where can i get books",
+                        "book facility",
+                        "Where is library",
+                        "Library",
+                        "Tell me about library",
+                        "how many libraries"
+                ],
+                "responses": [
+                        "College has a well developed Library as well as Digital Library for students located near the main gate. For more information you can visit College Website <a target=\"_blank\"href=\"https://www.dsce.edu.in/library/\" > here < /a>"
+                ],
+                "context_set": ""
+        },
+          {
+        "tag": "canteen",
+        "patterns": [
+                "food facilities",
+                "canteen facilities",
+                "canteen facility",
+                "is there any canteen",
+                "Is there a cafetaria in college",
+                "Does college have canteen",
+                "Where is canteen",
+                "where is cafetaria",
+                "canteen",
+                "Cafetaria"
+        ],
+        "responses": [
+                "DSCE has canteen facility with  wide variety of dishes available. It has recently started FOOD TRUCK for students."
+        ],
+        "context_set": ""
+},
+ 
+{
+        "tag": "principal",
+        "patterns": [
+                "what is the name of principal",
+                "what is the principal name",
+                "principal name",
+                "Who is college principal",
+                "Where is principal's office",
+                "principal",
+                "name of principal"
+        ],
+        "responses": [
+                "Dr. C.P.S. Prakash is principal of the College.Principal's office is located at ground floor of Heritage Block."
+        ],
+        "context_set": ""
+},
+ {
+        "tag": "sem",
+        "patterns": [
+                "exam dates",
+                "exam schedule",
+                "When is semester exam",
+                "Semester exam timetable",
+                "sem",
+                "semester",
+                "exam",
+                "when is exam",
+                "exam timetable",
+                "exam dates",
+                "when is semester"
+        ],
+        "responses": [
+                "Here is the Academic Calendar  <a target=\"_blank\" href=\"https://www.dsce.edu.in/calendar-of-events\">website</a>"
+        ],
+        "context_set": ""
+},
+ {
+        "tag": "facilities",
+        "patterns": [
+                "What facilities college provide",
+                "College facility",
+                "What are college facilities",
+                "facilities",
+                "facilities provided"
+        ],
+        "responses": [
+                "DSCE provides fully infrastructured  Labs with internet connection, Smart Classrooms, Auditorium, Amphitheatre, Library,Canteen, Hostel,Playgrounds,Parking Facilities and many other facilities for mental and social growth of students."
+        ],
+        "context_set": ""
+},
+ {
+        "tag": "admission",
+        "patterns": [
+                "what is the process of admission",
+                "what is the admission process",
+                "How to take admission in your college",
+                "What is the process for admission",
+                "admission",
+                "admission process"
+        ],
+        "responses": [
+                "College intakes students based on three categories CET , COMED-K and Management qouta. For more information visit the college website <a target=\"_blank\" href=\"https://dsce.edu.in/admissions\">.</a>"
+        ],
+        "context_set": ""
+},
+{
+        "tag": "salutaion",
+        "patterns": [
+                "okk",
+                "okie",
+                "nice work",
+                "well done",
+                "good job",
+                "thanks for the help",
+                "Thank You",
+                "its ok",
+                "Thanks",
+                "k",
+                "ok",
+                "okay"
+        ],
+        "responses": [
+                "I am glad I helped you",
+                "welcome, anything else i can assist you with?"
+        ],
+        "context_set": ""
+},
+{
+        "tag": "task",
+        "patterns": [
+                "what can you do",
+                "what are the thing you can do",
+                "things you can do",
+                "what can u do for me",
+                "how u can help me",
+                "why i should use you"
+        ],
+        "responses": [
+                "I can answer to low-intermediate questions regarding college",
+                "You can ask me questions regarding college, and i will try to answer them"
+        ],
+        "context_set": ""
+},
+ {
+        "tag":"ragging",
+        "patterns":[
+                "ragging",
+                "is ragging practice active in college",
+                "does college have any antiragging facility",
+                "is there any ragging cases",
+                "is ragging done here",
+                "ragging juniors",
+                "ragging history",
+                "ragging incidents"
+                
+        ],
+        "responses": [
+                "We are Proud to tell you that our college provides ragging free environment, and we have strict rules against ragging."
+        ]
+
+},
+{
+        "tag": "metro",
+        "patterns":[
+                "nearest metro station",
+                "what is the nearest metro station",
+                "which metro station is near",
+                "closest metro station",
+                "which metro station is closest",
+                "nearby metro stations",
+                "metro",
+                "metro station nearby"
+        ],
+        "responses":[
+                "Banashankari Metro Station and JP Nagar Metro station are nearest to the college."
+        ]
+},
+{
+        "tag": "vacation",
+        "patterns": [
+                "holidays",
+                "when will semester starts",
+                "when will semester end",
+                "when is the holidays",
+                "list of holidays",
+                "about vacations",
+                "about holidays",
+                "When is vacation",
+                "When is holidays",
+                "how long will be the vacation"
+        ],
+        "responses": [
+                " Vacation is provided after every semester.More days are given after the end of Even semester than Odd Semester."
+        ],
+        "context_set": ""
+},
+{
+        "tag": "fasttrack",
+        "patterns": [
+                "fasttrack",
+                "when will fasttrack starts",
+                "when will be fasttrack",
+                "when is the fasttrack classes",
+                "duration of fasttrack",
+                "about fasttrack",
+                "about extra classes",
+                "When is extra classes",
+                "When is fasttrack classes",
+                "how long will be the fastrack"
+        ],
+        "responses": [
+                "Fasttrack is usually held after every even semester for students having backlog in that academic year for 1-2 months."
+        ],
+        "context_set": ""
+},
+{
+        "tag": "results",
+        "patterns": [
+                "results",
+                "exam results",
+                "when will be results",
+                "when will semester end results",
+                "when is the announcement of results",
+                "announcement  of  exam results",
+                "about  exam results",
+                "about semester results",
+                "When is results",
+                "When is results announced",
+                "My Results"
+        ],
+        "responses": [
+                "Please refer here for recent exam results <a target=\"_blank\" href=\"https://www.dsce.edu.in/results\">here</a>"
+        ],
+        "context_set": ""
+}
+        
+]
+
+}
